@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 const API_KEY = 'rnd_Zf0NiXC3OwlgYWlkhooGj3rBTOUY';
 
-app.get('/services', async (req, res) => {
+app.get('/', async (req, res) => {
     try {
         const response = await axios.get('https://api.render.com/v1/services', {
             headers: {
